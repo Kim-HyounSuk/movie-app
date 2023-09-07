@@ -1,0 +1,22 @@
+.container {
+	padding: 10px 40px;
+}
+.swiperSlide {
+	display: flex;
+	gap: 50px;
+	padding: 15px 0;
+}
+
+.arrowBtn {
+	width: 25px;
+	height: 25px;
+	padding: 10px;
+	border-radius: 50%;
+	color: var(--main-text-color);
+	background-color: rgba(0, 0, 0, 0.25);
+}
+
+.arrowBtn:hover {
+	color: var(--focus-text-color);
+	background-color: rgba(0, 0, 0, 0.5);
+}

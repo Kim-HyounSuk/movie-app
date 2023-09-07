@@ -1,13 +1,10 @@
-import Card from './components/Home/Card';
+import Slider from './components/Home/Slider';
 import { dummyData } from './dummy-data';
 
 const App = () => {
 	return (
 		<div className='App'>
-			<Card
-				title={dummyData[0].title}
-				coverImage={dummyData[0].medium_cover_image}
-			/>
+			<Slider data={dummyData} />
 		</div>
 	);
 };

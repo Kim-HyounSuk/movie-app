@@ -5,6 +5,7 @@
 :root {
 	--main-bg-color: #111;
 	--main-text-color: #eee;
+	--focus-text-color: #ff0000;
 }
 
 html,
@@ -139,6 +140,13 @@ button {
 	padding: 0;
 	overflow: visible;
 	cursor: pointer;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+	display: none;
+}
+.swiper-pagination {
+	display: none;
 }
 
 /* Global Style */
