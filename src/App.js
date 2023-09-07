@@ -1,11 +1,15 @@
-import Slider from './components/Home/Slider';
-import { dummyData } from './dummy-data';
+import { HashRouter, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
 
 const App = () => {
 	return (
-		<div className='App'>
-			<Slider data={dummyData} />
-		</div>
+		<HashRouter>
+			<Routes>
+				<Route path='/' element={<Home />}>
+					<Route path='/movie/:id' element={<Home />} />
+				</Route>
+			</Routes>
+		</HashRouter>
 	);
 };
 

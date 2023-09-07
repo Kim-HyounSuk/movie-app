@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -151,5 +153,8 @@ button {
 
 /* Global Style */
 body {
-	background-color: var(--main-bg-color);
+	height: 100vh;
+	overflow: hidden;
+	font-family: 'Anton', sans-serif;
+	background: linear-gradient(to bottom, var(--main-bg-color) 70%, #222);
 }

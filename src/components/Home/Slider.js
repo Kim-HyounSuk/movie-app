@@ -18,12 +18,16 @@ const Slider = ({ data }) => {
 	const resizeOffsetFn = () => {
 		if (window.innerWidth >= 1650) {
 			setOFFSET(6);
-		} else if (window.innerWidth >= 1200 && window.innerWidth < 1650) {
+		} else if (window.innerWidth >= 1450 && window.innerWidth < 1650) {
 			setOFFSET(5);
-		} else if (window.innerWidth >= 768 && window.innerWidth < 1200) {
+		} else if (window.innerWidth >= 1100 && window.innerWidth < 1450) {
 			setOFFSET(4);
-		} else {
+		} else if (window.innerWidth >= 768 && window.innerWidth < 1100) {
 			setOFFSET(3);
+		} else if (window.innerWidth >= 575 && window.innerWidth < 768) {
+			setOFFSET(2);
+		} else {
+			setOFFSET(1);
 		}
 	};
 

@@ -1,8 +1,8 @@
 .container {
-	--card-bg-color: #ddd;
+	--card-bg-color: #bbb;
 
 	position: relative;
-	width: 100%;
+	width: 233px;
 	height: 345px;
 	cursor: pointer;
 	transition: all ease-in-out 0.1s;
@@ -10,6 +10,9 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-color: var(--card-bg-color);
+	box-shadow: 4px 4px 8px rgba(255, 255, 255, 0.5);
+	margin-right: 5px;
+	border-radius: 5px;
 }
 
 .container:hover {
@@ -26,5 +29,4 @@
 	opacity: 1;
 	text-align: center;
 	font-size: 18px;
-	font-weight: 700;
 }
