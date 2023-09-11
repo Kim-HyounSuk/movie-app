@@ -1,0 +1,32 @@
+.container {
+	--card-bg-color: #bbb;
+
+	position: relative;
+	width: 233px;
+	height: 345px;
+	cursor: pointer;
+	transition: all ease-in-out 0.1s;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: var(--card-bg-color);
+	box-shadow: 4px 4px 8px rgba(255, 255, 255, 0.5);
+	margin-right: 5px;
+	border-radius: 5px;
+}
+
+.container:hover {
+	transform: translateY(-10px);
+}
+
+.title {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 15px 0;
+	color: var(--main-text-color);
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 1;
+	text-align: center;
+	font-size: 18px;
+}
