@@ -153,8 +153,6 @@ button {
 
 /* Global Style */
 body {
-	height: 100vh;
-	overflow: hidden;
 	font-family: 'Anton', sans-serif;
 	background: linear-gradient(to bottom, var(--main-bg-color) 70%, #222);
 }

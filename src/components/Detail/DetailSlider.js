@@ -5,11 +5,10 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Pagination, Navigation } from 'swiper/modules';
-import style from './Slider.module.css';
-import Card from './Card';
-import { Link } from 'react-router-dom';
+import style from './DetailSlider.module.css';
+import Card from '../Home/Card';
 
-const Slider = ({ data }) => {
+const DetailSlider = ({ data }) => {
 	const [isMouse, setIsMouse] = useState(false);
 	const [OFFSET, setOFFSET] = useState(6);
 
@@ -62,13 +61,8 @@ const Slider = ({ data }) => {
 					<SwiperSlide className={style.swiperSlide} key={pageIndex}>
 						{data
 							.slice(pageIndex * OFFSET, (pageIndex + 1) * OFFSET)
-							.map((movie) => (
-								<Link key={movie.id} to={`/character/${movie.id}`}>
-									<Card
-										title={movie.name}
-										coverImage={`${movie.thumbnail.path}.${movie.thumbnail.extension}`}
-									/>
-								</Link>
+							.map((movie, idx) => (
+								<Card key={idx} title={movie.name} coverImage={''} />
 							))}
 						{pageIndex === maxPage - 1 && data.length % OFFSET > 0
 							? Array.from({ length: emptyData }).map((_, index) => (
@@ -119,8 +113,8 @@ const Slider = ({ data }) => {
 		</div>
 	);
 };
-Slider.propTypes = {
+DetailSlider.propTypes = {
 	data: PropTypes.array.isRequired,
 };
 
-export default Slider;
+export default DetailSlider;
